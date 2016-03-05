@@ -9,7 +9,7 @@
 	  <ul class="posts">
 		{{ $baseurl := .Site.BaseURL }}
 		{{ range $name, $page := .Site.Pages }}
-		{{ if eq .Type "post" }}
+		<!-- {{ if eq .Type "post" }} -->
 		<li>
 		  <a href="{{ .Permalink }}">{{ $page.Title }}</a>
 
@@ -34,7 +34,7 @@
 
 		  </p>
 		</li>
-		{{ end }}
+		<!-- {{ end }} -->
 		{{ end }}
 	  </ul>
 	</div>
